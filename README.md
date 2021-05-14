@@ -10,7 +10,7 @@ Only signed-in users can have access to the apps features. When Logged-in, a use
 
 ## Live Preview
 
-https://cobian-social-media.herokuapp.com/users/sign_in
+https://cobian-social-media.herokuapp.com/
 
 
 ## Getting Started
