@@ -8,6 +8,11 @@ This social media app allows users to create posts, friend other users and then 
 Only signed-in users can have access to the apps features. When Logged-in, a user is able to see a list of all users / to see “Timeline” page with posts (with number of likes and comments) written by him and all his friends (the most recent posts on the top) / to see a selected user page with their user name and all posts written by them (the most recent posts on the top) /  to create new posts (text only) / to like/dislike posts (but can like single post only once) / to add comments to posts / to send friendship invitations / to accept or reject friendships invitation / to see pending friendship invitations sent to him from other users.
 
 
+## Live Preview
+
+https://cobian-social-media.herokuapp.com/
+
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
