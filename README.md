@@ -71,7 +71,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-* Microverse
+Guidelines for this project supplied by [Microverse](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/49736080/)
 
 
 ## 📝 License
