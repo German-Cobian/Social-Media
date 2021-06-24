@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps:
 
 * Ruby 2.7.0
 * Rails 5.2.4
-*Postgres: >=9.5
+* Postgres: >=9.5
 * SQLite3
 * Node.js
 * Yarn
@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps:
 * Run this command in your OS terminal: `git clone git@github.com:kiranitor123/private-events.git` to get a copy of the project
 * Navigate to the project's directory using the `cd` command
 * Migrate the database to your environment by running `rails db:migrate`
-* Run `rails webpacker:install` to configure Webpacker for your environment. Otherwise, an error like `Webpacker::Manifest::MissingEntryError` will appear if you attempt to run the server.
+* Run `rails webpacker:install` to configure Webpacker for your environment. Otherwise, an error like `Webpacker::Manifest::MissingEntryError` will appear if you attempt to run the server
 * Install dependencies by running `bundle install`
 * Execute `rails server` to fire up the server
 * Visit `http://localhost:3000/` in your browser to get into the app
@@ -55,7 +55,7 @@ To get a local copy up and running follow these simple example steps:
 👤 **German Cobian**
 
 * GitHub: [@German-Cobian](https://github.com/German-Cobian)
-* Twitter: [@GermanCobian3](https://twitter.com/GermanCobian3)
+* Twitter: [@GermanCobian1](https://twitter.com/GermanCobian1)
 * LinkedIn: [@german-cobian](https://www.linkedin.com/in/german-cobian/)
 
 
@@ -76,4 +76,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/German-Cobian/Re-former/blob/re-former-feature/LICENSE) licensed.# README
+This project is [MIT](https://github.com/German-Cobian/Re-former/blob/re-former-feature/LICENSE) licensed.
