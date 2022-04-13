@@ -5,13 +5,13 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
-  # rubocop:disable Layout/IndentationWidth
+  # rubocop:disable Layout/RescueEnsureAlignment
   def show
     @user = begin User.find(params[:id])
     rescue StandardError
     current_user
     end
-    # rubocop:enable Layout/IndentationWidth
+    # rubocop:enable Layout/RescueEnsureAlignment
 
     @posts = @user.posts.ordered_by_most_recent
   end
