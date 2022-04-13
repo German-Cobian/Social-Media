@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   def show
     @user = begin
       User.find(params[:id])
-    rescue StandardError
+            rescue StandardError
       current_user
     end
 
