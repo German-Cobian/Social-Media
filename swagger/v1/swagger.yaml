@@ -1,0 +1,74 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/posts":
+    get:
+      summary: Shows all posts
+      tags:
+      - Posts
+      responses:
+        '200':
+          description: show posts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  user_id:
+                    type: integer
+                  content:
+                    type: string
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                required:
+                - id
+                - user_id
+                - content
+                - created_at
+                - updated_at
+  "/api/posts/{post_id}/comments":
+    get:
+      summary: Retrieves comments on a specific post
+      tags:
+      - Comments
+      parameters:
+      - name: post_id
+      responses:
+        '200':
+          description: show comments
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user_id:
+                    type: integer
+                  post_id:
+                    type: integer
+                  content:
+                    type: string
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+                required:
+                - id
+                - user_id
+                - post_id
+                - content
+                - created_at
+                - updated_at
+        '404':
+          description: comments not found
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

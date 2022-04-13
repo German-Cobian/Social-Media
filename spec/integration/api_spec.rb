@@ -2,13 +2,20 @@ require 'swagger_helper'
 describe 'API' do
 
     path '/api/posts' do
-        post 'Shows all posts' do
+        get 'Shows all posts' do
           tags 'Posts'
-          consumes 'application/json'
-          parameter name: :post, in: :body, schema: {
-          }
+          produces 'application/json'
     
           response '200', 'show posts' do
+            schema type: :object,
+            properties: {
+              id: { type: :integer } ,
+              user_id: { type: :integer },
+              content: { type: :string },
+              created_at: { type: :string },
+              updated_at: { type: :string }
+            },
+            required: [ 'id', 'user_id', 'content', "created_at", "updated_at" ]
             run_test!
           end
         end 
@@ -17,16 +24,20 @@ describe 'API' do
     path '/api/posts/{post_id}/comments' do
 
       get 'Retrieves comments on a specific post' do
-        tags 'Post', 'Comments'
+        tags 'Comments'
         produces 'application/json'
-        parameter name: :post_id, in: :path, type: :string
+        parameter name: :post_id
   
         response '200', 'show comments' do
           schema type: :object,
-            properties: {
-              post_id: { type: :integer }
-            },
-            required: [ 'post_id' ]
+          properties: {
+            user_id: { type: :integer } ,
+            post_id: { type: :integer },
+            content: { type: :string },
+            created_at: { type: :string },
+            updated_at: { type: :string }
+          },
+            required: [ 'id', 'user_id', 'post_id', 'content', 'created_at', 'updated_at' ]
   
           let(:post_id) { Post.find(post_id).comments}
           run_test!
@@ -38,4 +49,5 @@ describe 'API' do
         end
       end
     end
+
 end
