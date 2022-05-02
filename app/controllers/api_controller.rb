@@ -8,6 +8,11 @@ class ApiController < ActionController::API
     json_response(@posts)
   end
 
+  def show_comments
+    @comments = @post.comments
+    json_response(@comments)
+  end
+
   private
 
   def set_post
