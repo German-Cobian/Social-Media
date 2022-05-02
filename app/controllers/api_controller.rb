@@ -1,4 +1,4 @@
-class ActionController < ActionController::API
+class ApiController < ActionController::API
   include Response
 
   before_action :set_post, only: [:show_comments]
