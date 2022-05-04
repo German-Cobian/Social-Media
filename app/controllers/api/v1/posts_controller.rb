@@ -1,5 +1,4 @@
 class Api::V1::PostsController < ApplicationController
-
   def index
     @post = Post.all
     render json: @post
@@ -10,5 +9,4 @@ class Api::V1::PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:content)
   end
-
 end
