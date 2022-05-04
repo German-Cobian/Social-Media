@@ -8,6 +8,11 @@ This social media app allows users to create posts, friend other users and then 
 Only signed-in users can have access to the apps features. When Logged-in, a user is able to see a list of all users / to see “Timeline” page with posts (with number of likes and comments) written by him and all his friends (the most recent posts on the top) / to see a selected user page with their user name and all posts written by them (the most recent posts on the top) /  to create new posts (text only) / to like/dislike posts (but can like single post only once) / to add comments to posts / to send friendship invitations / to accept or reject friendships invitation / to see pending friendship invitations sent to him from other users.
 
 
+## Live Preview
+
+https://cobian-social-media.herokuapp.com/
+
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
@@ -17,7 +22,7 @@ To get a local copy up and running follow these simple example steps:
 
 * Ruby 2.7.0
 * Rails 5.2.4
-*Postgres: >=9.5
+* Postgres: >=9.5
 * SQLite3
 * Node.js
 * Yarn
@@ -30,7 +35,7 @@ To get a local copy up and running follow these simple example steps:
 * Run this command in your OS terminal: `git clone git@github.com:kiranitor123/private-events.git` to get a copy of the project
 * Navigate to the project's directory using the `cd` command
 * Migrate the database to your environment by running `rails db:migrate`
-* Run `rails webpacker:install` to configure Webpacker for your environment. Otherwise, an error like `Webpacker::Manifest::MissingEntryError` will appear if you attempt to run the server.
+* Run `rails webpacker:install` to configure Webpacker for your environment. Otherwise, an error like `Webpacker::Manifest::MissingEntryError` will appear if you attempt to run the server
 * Install dependencies by running `bundle install`
 * Execute `rails server` to fire up the server
 * Visit `http://localhost:3000/` in your browser to get into the app
@@ -81,7 +86,7 @@ Status: 201 Created should be displayed and posted data should be showing up in 
 👤 **German Cobian**
 
 * GitHub: [@German-Cobian](https://github.com/German-Cobian)
-* Twitter: [@GermanCobian3](https://twitter.com/GermanCobian3)
+* Twitter: [@GermanCobian1](https://twitter.com/GermanCobian1)
 * LinkedIn: [@german-cobian](https://www.linkedin.com/in/german-cobian/)
 
 
@@ -97,9 +102,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-* Microverse
+Guidelines for this project supplied by [Microverse](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/49736080/)
 
 
 ## 📝 License
 
-This project is [MIT](https://github.com/German-Cobian/Re-former/blob/re-former-feature/LICENSE) licensed.# README
+This project is [MIT](https://github.com/German-Cobian/Re-former/blob/re-former-feature/LICENSE) licensed.
