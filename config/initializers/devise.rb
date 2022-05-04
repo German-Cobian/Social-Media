@@ -277,6 +277,11 @@ Devise.setup do |config|
   #
   #     mount MyEngine, at: '/my_engine'
   #
+  config.warden do |manager|
+    # manager.intercept_401 = false
+    manager.strategies.add :jwt, Devise::Strategies::JWT
+    manager.default_strategies(scope: :user).unshift :jwt
+  end
   # The router that invoked `devise_for`, in the example above, would be:
   # config.router_name = :my_engine
   #
@@ -297,3 +302,23 @@ Devise.setup do |config|
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
 end
+
+
+module Devise
+  module Strategies
+  class JWT < Base
+  def valid?
+  request.headers['Authorization'].present?
+  end
+  def authenticate!
+  token = request.headers.fetch('Authorization', '').split(' ').last
+  payload = JsonWebToken.decode(token)
+  success! User.find(payload['sub'])
+  rescue ::JWT::ExpiredSignature
+  fail! 'Auth token has expired'
+  rescue ::JWT::DecodeError
+  fail! 'Auth token is invalid'
+  end
+  end
+  end
+  end
