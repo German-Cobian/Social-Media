@@ -39,6 +39,10 @@ To get a local copy up and running follow these simple example steps:
 * To close the server, enter `Ctrl + C` in your terminal
 
 
+![Inputting user](/app/assets/images/inputing_user.png?raw=true "Inputting of user" )
+![Inputting token](/app/assets/images/inputing_token.png?raw=true "Inputting of token")
+![Inputting comment](/app/assets/images/inputing_comment.png?raw=true "Inputting of comment")
+
 ## Authors
 
 👤 **Rolando Alvarez Faye**
